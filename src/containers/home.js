@@ -25,6 +25,10 @@ class Home extends React.Component {
     }
     delete(i){
         console.log('delete',i);
+        
+    }
+    edit(i){
+        console.log('edit',i);
     }
     render() {
         return (
@@ -43,6 +47,7 @@ class Home extends React.Component {
                             <List 
                                 list={this.state.list} 
                                 _delete={this.delete}
+                                _edit={this.edit}
                             />
                     </div>
                 </div>
